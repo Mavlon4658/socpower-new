@@ -1,0 +1,628 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta name="HandheldFriendly" content="True">
+        <title>Social Power</title>
+        <meta name="description" content="" lang="ru">
+        <meta name="keywords" content="" lang="ru">
+        <meta property="og:title" content="Social Power">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="img/og-image.jpg/index.html">
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:url" content="http://yoursite.ru">
+        <link rel="image_src" href="img/og-image.jpg">
+        <link href="css/libs.min_v%3D12.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header section">
+                <div class="header__wrap wrap">
+                    <div class="header__logo">socpower</div>
+                    <div class="header__right">
+                        <nav class="header__nav"><a class="header__nav-link" href="#advantages" data-js="scroll-to">Функционал</a><a class="header__nav-link" href="#users" data-js="scroll-to">Кому подойдет?</a><a class="header__nav-link" href="#faq" data-js="scroll-to">FAQ</a><a class="header__nav-link" href="#slider" data-js="scroll-to">Отзывы</a><a class="header__nav-link" href="#best" data-js="scroll-to">Контакты</a></nav>
+                        <div class="header__number">
+                            <div class="header__number-dot"></div>
+                            <div class="header__number-text">С нами уже<span class="header__number-count"><span id="users-counter-value"></span></span></div>
+                        </div><a class="header__btn btn" type="button" href="/dashboard/"><svg class="icon-user header__btn-ico"><use xlink:href="img/elements.svg#user"></use></svg>Личный кабинет</a><button class="header__menu-toggle" type="button" data-js="toggle-menu"><svg class="icon-menu header__menu-toggle-ico">
+                                <use xlink:href="img/elements.svg#menu"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="header__menu" data-js="menu-mobile">
+                    <div class="header__menu-head">
+                        <div class="header__logo">socpower</div><button class="header__menu-close" data-js="close-menu"><svg class="icon-cancel header__menu-ico">
+                                <use xlink:href="img/elements.svg#cancel"></use>
+                            </svg></button>
+                    </div>
+                    <div class="header__menu-content">
+                        <div class="header__menu-group">
+                            <div class="header__menu-nav"><a class="header__menu-link" href="#advantages" data-js="scroll-to" data-scroll="mobile__menu">Функционал</a><a class="header__menu-link" href="#users" data-js="scroll-to" data-scroll="mobile__menu">Кому подойдет?</a><a class="header__menu-link" href="#faq" data-js="scroll-to" data-scroll="mobile__menu">FAQ</a><a class="header__menu-link" href="#slider" data-js="scroll-to" data-scroll="mobile__menu">Отзывы</a><a class="header__menu-link" href="#best" data-js="scroll-to" data-scroll="mobile__menu">Контакты</a></div><button class="header__btn btn" type="button" onclick="window.location.href='/dashboard/'"><svg class="icon-user header__btn-ico">
+                                    <use xlink:href="img/elements.svg#user"></use>
+                                </svg>Личный кабинет</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="hero section" data-parallax="section">
+                <div class="circles">
+                    <div class="circles__item circles__item_first" data-js="circle"></div>
+                    <div class="circles__item circles__item_second" data-js="circle"></div>
+                    <div class="circles__item circles__item_third" data-js="circle"></div>
+                </div>
+                <div class="hero__wrap wrap">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Сервис, который повышает эффективность страницы ВКонтакте<span class="hero__title-price">от 50 до 300% за 10 руб в день</span></h1>
+                        <p class="hero__description">Внимание - главный товар 21 века! <br class="mobile">Повышай внимание <br class="no-mobile"> к своей странице <br class="mobile">ВКонтакте и продавай больше услуг и товаров</p>
+                    </div>
+                    <div class="hero__bottom"><a class="btn btn_blue hero__btn" href="/register/">Регистрация<svg class="icon-right-arrow btn__arrow"><use xlink:href="img/elements.svg#right-arrow"></use></svg></a>
+                        <p class="hero__count">Нам доверяют более 10 000 человек!</p>
+                    </div>
+                    <div class="hero__parallax">
+                        <div class="hero__parallax-layer hero__parallax-layer_phone" data-parallax="item" data-speed="-0.5"><img class="hero__phone" src="img/hero-phone.png" alt="phone"></div>
+                        <div class="hero__parallax-layer hero__parallax-layer_like-1" data-parallax="item" data-speed="-1"><img class="hero__like" src="img/like-1.png" alt="like"></div>
+                        <div class="hero__parallax-layer hero__parallax-layer_like-2" data-parallax="item" data-speed="-1"><img class="hero__like" src="img/like-2.png" alt="like"></div>
+                        <div class="hero__parallax-layer hero__parallax-layer_vk-1" data-parallax="item" data-speed="-2"><img class="hero__like" src="img/vk-parallax-1.png" alt="like"></div>
+                        <div class="hero__parallax-layer hero__parallax-layer_vk-2" data-parallax="item" data-speed="-2"><img class="hero__like" src="img/vk-parallax-2.png" alt="like"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="advantages section" id="advantages">
+                <div class="advantages__wrap wrap">
+                    <div class="advantages__list">
+                        <div class="advantages__item"><svg class="icon-heart advantages__item-ico">
+                                <use xlink:href="img/elements.svg#heart"></use>
+                            </svg>
+                            <p class="advantages__item-description">Автолайкинг постов <br class="advantages__brake">и фото друзей для <br class="advantages__brake">постоянного привлечения внимания</p>
+                        </div>
+                        <div class="advantages__item"><svg class="icon-filter advantages__item-ico">
+                                <use xlink:href="img/elements.svg#filter"></use>
+                            </svg>
+                            <p class="advantages__item-description">Дополнительные фильтры, чтобы привлекать <br class="advantages__brake">внимание только нужных <br class="advantages__brake">вам людей</p>
+                        </div>
+                        <div class="advantages__item"><svg class="icon-auto-like advantages__item-ico">
+                                <use xlink:href="img/elements.svg#auto-like"></use>
+                            </svg>
+                            <p class="advantages__item-description">Автолайкинг холодной аудитории потенциальных клиентов по специальным настройкам</p>
+                        </div>
+                        <div class="advantages__item"><svg class="icon-eye advantages__item-ico">
+                                <use xlink:href="img/elements.svg#eye"></use>
+                            </svg>
+                            <p class="advantages__item-description">Автоматический просмотр сторис для привлечения внимания</p>
+                        </div>
+                        <div class="advantages__item"><svg class="icon-group advantages__item-ico">
+                                <use xlink:href="img/elements.svg#group"></use>
+                            </svg>
+                            <p class="advantages__item-description">Ежедневный охват <br class="advantages__brake">до 500 человек новой <br class="advantages__brake">аудитории или утепление <br class="advantages__brake">имеющихся подписчиков <br class="advantages__brake">всего за 10 <span class="rubble">₽</span></p>
+                        </div>
+                        <div class="advantages__item"><svg class="icon-email advantages__item-ico">
+                                <use xlink:href="img/elements.svg#email"></use>
+                            </svg>
+                            <p class="advantages__item-description">Автоматический приём <br class="advantages__brake">в друзья с рассылкой <br class="advantages__brake">приветственных сообщений</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video section">
+                <div class="video__wrap wrap">
+                    <div class="video__container" data-js="main-video-container">
+                        <div class="video__box"><img class="video__thumb" src="img/video-preview.jpg" alt="YouTube video"><iframe class="video__iframe" src="" title="YouTube video" data-video="_kY1s2Hl6Bk?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-js="main-video-src"></iframe></div>
+                        <div class="video__content"><button class="video__btn btn" type="button" data-js="main-video-play"><svg class="icon-play video__btn-ico">
+                                    <use xlink:href="img/elements.svg#play"></use>
+                                </svg></button>
+                            <p class="video__content-intro">Посмотрите короткое видео как пользоваться сервисом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="users section" data-parallax="users-section" id="users">
+                <div class="users__parallax-layer" data-parallax="users-layer" data-speed="-0.8"><img class="users__users" src="img/users-icons.png" alt="users"></div>
+                <div class="users__wrap wrap">
+                    <h2 class="users__title title">Кому подойдет <span class="title__light-text">этот сервис</span></h2>
+                    <div class="users__list">
+                        <div class="users__item">
+                            <div class="users__icon-box"><svg class="icon-writing-tool users__ico">
+                                    <use xlink:href="img/elements.svg#writing-tool"></use>
+                                </svg></div>
+                            <div class="users__item-title">Блогерам</div>
+                            <p class="users__item-descr">Socpower поможем вам повысить посещаемость своей страницы. Вы будете получать больше лайков, больше внимания, больше аудитории</p>
+                        </div>
+                        <div class="users__item">
+                            <div class="users__icon-box"><svg class="icon-businessman users__ico">
+                                    <use xlink:href="img/elements.svg#businessman"></use>
+                                </svg></div>
+                            <div class="users__item-title">Предпринимателям</div>
+                            <p class="users__item-descr">Вы можете создать рабочую страницу для своего бизнеса и добавлять свою целевую аудиторию в друзья. socpower будет регулярно привлекать их внимание. <br>Ваши потенциальные клиенты будут регулярно посещать вашу страницу, что поднимет продажи!</p>
+                        </div>
+                        <div class="users__item">
+                            <div class="users__icon-box"><svg class="icon-freelancer users__ico">
+                                    <use xlink:href="img/elements.svg#freelancer"></use>
+                                </svg></div>
+                            <div class="users__item-title">Фрилансерам</div>
+                            <p class="users__item-descr">У вас в друзьях много ваших клиентов? Как часто они вспоминают о вас и ваших услугам? Благодаря socpower они будут делать это каждый день. В тот момент, когда им нужны будете вы, вы будете первым, кто придет им на ум.</p>
+                        </div>
+                        <div class="users__item">
+                            <div class="users__icon-box"><svg class="icon-social-growth users__ico">
+                                    <use xlink:href="img/elements.svg#social-growth"></use>
+                                </svg></div>
+                            <div class="users__item-title">SMM-щикам</div>
+                            <p class="users__item-descr">У вас есть клиенты, которым вы помогаете раскручивать их бренд ВКонтакте? Теперь вы можете дать им еще один полезный инстурмент, который повысить эффективность их соц. сетей и получать с этого дополнительный доход через партнерскую программу.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq section" data-section="faq" id="faq">
+                <div class="circles circles_right">
+                    <div class="circles__item circles__item_first" data-js="faq-circle"></div>
+                    <div class="circles__item circles__item_second" data-js="faq-circle"></div>
+                    <div class="circles__item circles__item_third" data-js="faq-circle"></div>
+                </div>
+                <div class="faq__wrap wrap">
+                    <h2 class="faq__title title">Отвечаем на самые <span class="title__light-text">популярные вопросы </span></h2>
+                    <div class="faq__list">
+                        <div class="faq__item" data-js="toggle-faq">
+                            <div class="faq__item-header">
+                                <div class="faq__item-mark">?</div>
+                                <div class="faq__item-title">Это безопасно для моей страницы?</div>
+                                <div class="faq__item-ico"><svg class="icon-next faq__ico-arrow">
+                                        <use xlink:href="img/elements.svg#next"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="faq__item-body">
+                                <p class="faq__item-descr">Да! Мы используем выделенные айпи, которые позволяют не выходить за лимиты вконтакте и сохранять свою страницу в полной безопасности.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item" data-js="toggle-faq">
+                            <div class="faq__item-header">
+                                <div class="faq__item-mark">?</div>
+                                <div class="faq__item-title">Почему это повышает эффективность моей страницы?</div>
+                                <div class="faq__item-ico"><svg class="icon-next faq__ico-arrow">
+                                        <use xlink:href="img/elements.svg#next"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="faq__item-body">
+                                <p class="faq__item-descr">Люди любят внимание. Когда они видят, что вы каждый день ставите им лайки на их посты, смотрите их сторисы и многое другое, то они начинают обращать внимание и на вас. Вы отдаете свое внимание , чтобы они отдали свое.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item" data-js="toggle-faq">
+                            <div class="faq__item-header">
+                                <div class="faq__item-mark">?</div>
+                                <div class="faq__item-title">Не выглядит это как спам?</div>
+                                <div class="faq__item-ico"><svg class="icon-next faq__ico-arrow">
+                                        <use xlink:href="img/elements.svg#next"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="faq__item-body">
+                                <p class="faq__item-descr">Socpower имеет удобные системы настройки, которые позволяют создать эффект реальности. Вы можете настроить socpower таким образом, что никто вас даже не заподозрит в использование какого-то сервиса.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item" data-js="toggle-faq">
+                            <div class="faq__item-header">
+                                <div class="faq__item-mark">?</div>
+                                <div class="faq__item-title">Мне нужно будет подключать дополнительные сервисы? Антикапчу?</div>
+                                <div class="faq__item-ico"><svg class="icon-next faq__ico-arrow">
+                                        <use xlink:href="img/elements.svg#next"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="faq__item-body">
+                                <p class="faq__item-descr">Нет! Мы позаботились о вас и подключили все за вас. У нас есть сервисы, которые на автомате обрабатывают вам всю капчу.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item" data-js="toggle-faq">
+                            <div class="faq__item-header">
+                                <div class="faq__item-mark">?</div>
+                                <div class="faq__item-title">Сколько стоит ваш сервис?</div>
+                                <div class="faq__item-ico"><svg class="icon-next faq__ico-arrow">
+                                        <use xlink:href="img/elements.svg#next"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="faq__item-body">
+                                <p class="faq__item-descr">От 10 руб. в день за 1 аккаунт.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="stats section" data-parallax="stats">
+                <div class="stats__parallax-layer" data-parallax="stats-layer" data-speed="-2"><img class="stats__parallax-img" src="img/stats-icons.png" alt="stats"></div>
+                <div class="stats__wrap wrap">
+                    <div class="stats__content">
+                        <h2 class="stats__title">Начните продавать больше товаров и услуг прямо сейчас!</h2>
+                        <p class="stats__description">С помощью нашего сервиса вы сможете увеличить эффективность своей страницы ВКонтакте, тем самым повысите количество продаж товаров и своих услуг</p><a class="stats__btn btn" href="/register/">Попробовать за 10<span class="rubble">₽</span><svg class="icon-right-arrow stats__btn-arrow"><use xlink:href="img/elements.svg#right-arrow"></use></svg></a>
+                    </div>
+                    <div class="stats__left">
+                        <div class="stats__left-bg" data-js="stats-left"></div>
+                        <div class="stats__tag stats__tag_first" data-tag="steps"><svg class="icon-like stats__tag-ico">
+                                <use xlink:href="img/elements.svg#like"></use>
+                            </svg>1289</div>
+                        <div class="stats__tag stats__tag_second" data-tag="steps"><svg class="icon-chat stats__tag-ico">
+                                <use xlink:href="img/elements.svg#chat"></use>
+                            </svg>133</div>
+                        <div class="stats__tag stats__tag_third" data-tag="steps"><svg class="icon-share stats__tag-ico">
+                                <use xlink:href="img/elements.svg#share"></use>
+                            </svg>680</div>
+                        <div class="stats__waves">
+                            <div class="stats__wave stats__wave_first" data-waves="steps"></div>
+                            <div class="stats__wave stats__wave_second" data-waves="steps"></div>
+                            <div class="stats__wave stats__wave_third" data-waves="steps"></div>
+                            <div class="stats__wave stats__wave_four" data-waves="steps"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slider section">
+                <div class="slider__wrap wrap">
+                    <h2 class="slider__title title">А это видео-отзывы от наших пользователей</h2>
+                    <div class="slider__box">
+                        <div class="slider__container swiper-container" data-js-slider="video" id="slider">
+                            <div class="slider__wrapper swiper-wrapper">
+                                <div class="slider__item swiper-slide">
+                                    <div class="slider__item-inner">
+                                        <div class="video video_slider section">
+                                            <div class="video__container" data-js="slider-video-container">
+                                                <div class="video__box"><img class="video__thumb" src="img/review-1.webp" alt="YouTube video"><iframe class="video__iframe" src="" data-video="ehhbQllt4d4?" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-js="slider-video-src"></iframe>
+                                                    <div class="video__content"><button class="video__btn btn" type="button" data-js="slider-video-play"><svg class="icon-play video__btn-ico">
+                                                                <use xlink:href="img/elements.svg#play"></use>
+                                                            </svg></button></div>
+                                                </div>
+                                                <div class="video__image"><img class="video__thumb" src="img/review-1.webp" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-info">
+                                            <div class="slider__item-name">Анастасия Тимаева</div>
+                                            <p class="slider__item-descr">Тренер по йоге</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item swiper-slide">
+                                    <div class="slider__item-inner">
+                                        <div class="video video_slider section">
+                                            <div class="video__container" data-js="slider-video-container">
+                                                <div class="video__box"><img class="video__thumb" src="img/review-2.webp" alt="YouTube video"><iframe class="video__iframe" src="" data-video="FooF95aSOX0?" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-js="slider-video-src"></iframe>
+                                                    <div class="video__content"><button class="video__btn btn" type="button" data-js="slider-video-play"><svg class="icon-play video__btn-ico">
+                                                                <use xlink:href="img/elements.svg#play"></use>
+                                                            </svg></button></div>
+                                                </div>
+                                                <div class="video__image"><img class="video__thumb" src="img/review-2.webp" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-info">
+                                            <div class="slider__item-name">Eva Fox</div>
+                                            <p class="slider__item-descr">Создатель "Красивый SMM" и тренер Pole Dance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item swiper-slide">
+                                    <div class="slider__item-inner">
+                                        <div class="video video_slider section">
+                                            <div class="video__container" data-js="slider-video-container">
+                                                <div class="video__box"><img class="video__thumb" src="img/review-3.webp" alt="YouTube video"><iframe class="video__iframe" src="" data-video="vpPjmwdnsQU?" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-js="slider-video-src"></iframe>
+                                                    <div class="video__content"><button class="video__btn btn" type="button" data-js="slider-video-play"><svg class="icon-play video__btn-ico">
+                                                                <use xlink:href="img/elements.svg#play"></use>
+                                                            </svg></button></div>
+                                                </div>
+                                                <div class="video__image"><img class="video__thumb" src="img/review-3.webp" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-info">
+                                            <div class="slider__item-name">Лариса Хадсон</div>
+                                            <p class="slider__item-descr">Бизнесвумен МЛМ индустрии</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__controls"><button class="slider__arrow slider__arrow_prev"><svg class="icon-right-arrow slider__ico">
+                                    <use xlink:href="img/elements.svg#right-arrow"></use>
+                                </svg></button><button class="slider__arrow slider__arrow_next"><svg class="icon-right-arrow slider__ico">
+                                    <use xlink:href="img/elements.svg#right-arrow"></use>
+                                </svg></button></div>
+                        <div class="slider__pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="best section" data-parallax="best-section" id="best">
+                <div class="best__parallax-layer" data-parallax="best-layer" data-speed="-0.8"><img class="best__icons" src="img/best-icons.png" alt="bests"></div>
+                <div class="best__wrap wrap">
+                    <h2 class="best__title title">Станьте популярны</h2>
+                    <p class="best__descr">Привлекайте новых клиентов и повышайте доверие к своему бизнесу за счет высокой активности своей страницы</p><a class="btn btn_blue best__btn" href="/register/">Попробовать за 10 <span class="best__btn-currency">₽</span><svg class="icon-right-arrow btn__arrow"><use xlink:href="img/elements.svg#right-arrow"></use></svg></a>
+                </div>
+            </section>
+            <footer class="footer section">
+                <div class="footer__wrap wrap">
+                    <div class="footer__top">
+                        <div class="footer__nav"><a class="footer__nav-link" href="#advantages" data-js="scroll-to">Функционал</a><a class="footer__nav-link" href="#users" data-js="scroll-to">Кому подойдет?</a><a class="footer__nav-link" href="#faq" data-js="scroll-to">FAQ</a><a class="footer__nav-link" href="#slider" data-js="scroll-to">Отзывы</a></div><a class="footer__btn btn" href="https://vk.com/socpowerclub" target="_blank"><svg class="icon-vk footer__btn-ico"><use xlink:href="img/elements.svg#vk"></use></svg>Мы ВКонтакте</a>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__content">
+                            <div class="footer__logo">socpower</div>
+                            <div class="footer__group">
+                                <p class="footer__descr">Все права защищены. При копировании материала ссылка на сайт обязательна. socpower.ru</p>
+                                <a class="footer__link" href="#legal" data-modal="#legal">Пользовательское соглашение</a>
+                                <br>
+                                <a class="footer__link" href="#partner" data-modal="#partner">Партнёрское соглашение</a>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__company">
+                                <p class="footer__descr">ИП Горшков Роман Юрьевич; <br>ИНН: 682101685633; <br>ОГРНИП: 320784700282974;</p>
+                            </div>
+                            <div class="footer__dev">
+                                <div class="footer__dev-title">Дизайн — </div><a class="footer__link" href="#!">Кирилл Арефьев</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="modal" id="sign-in">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="popup">
+                        <div class="popup__header">
+                            <h3 class="popup__title title">Авторизация</h3>
+                            <p class="popup__descr">Для авторизации необходимо ввести логин и пароль в поля ниже</p>
+                        </div>
+                        <div class="popup__close" data-role="modal-close"><svg class="icon-cancel popup__close-ico">
+                                <use xlink:href="img/elements.svg#cancel"></use>
+                            </svg></div>
+                        <form class="popup__form">
+                            <div class="popup__form-group"><input class="popup__form-input" type="email" placeholder="user@mail.ru" name="email"><svg class="icon-user-login popup__form-ico">
+                                    <use xlink:href="img/elements.svg#user-login"></use>
+                                </svg></div>
+                            <div class="popup__form-group"><input class="popup__form-input" type="password" placeholder="Пароль" name="password" data-js-action="input-pass"><svg class="icon-key popup__form-ico">
+                                    <use xlink:href="img/elements.svg#key"></use>
+                                </svg><button class="btn popup__form-input-btn" data-js-action="toggle-input-type" type="button"><svg class="icon-eye popup__form-ico popup__form-ico_show">
+                                        <use xlink:href="img/elements.svg#eye"></use>
+                                    </svg></button></div>
+                            <div class="popup__form-group popup__form-group_submit"><button class="btn btn_blue popup__form-btn" type="submit">Войти<svg class="icon-right-arrow btn__arrow">
+                                        <use xlink:href="img/elements.svg#right-arrow"></use>
+                                    </svg></button></div>
+                        </form>
+                        <div class="popup__footer"><a class="popup__link" href="#sign-up" data-modal="#sign-up">Не зарегистрированы?</a><a class="popup__link" href="#recover" data-modal="#recover">Забыли пароль?</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="sign-up">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="popup">
+                        <div class="popup__header">
+                            <h3 class="popup__title title">Регистрация</h3>
+                            <p class="popup__descr">Для регистрации необходимо ввести логин и пароль в поля ниже</p>
+                        </div>
+                        <div class="popup__close" data-role="modal-close"><svg class="icon-cancel popup__close-ico">
+                                <use xlink:href="img/elements.svg#cancel"></use>
+                            </svg></div>
+                        <form class="popup__form">
+                            <div class="popup__form-group"><input class="popup__form-input" type="email" placeholder="user@mail.ru" name="email"><svg class="icon-user-login popup__form-ico">
+                                    <use xlink:href="img/elements.svg#user-login"></use>
+                                </svg></div>
+                            <div class="popup__form-group"><input class="popup__form-input" type="password" placeholder="Пароль" name="password" data-js-action="input-pass"><svg class="icon-key popup__form-ico">
+                                    <use xlink:href="img/elements.svg#key"></use>
+                                </svg><button class="btn popup__form-input-btn" data-js-action="toggle-input-type" type="button"><svg class="icon-eye popup__form-ico popup__form-ico_show">
+                                        <use xlink:href="img/elements.svg#eye"></use>
+                                    </svg></button></div>
+                            <div class="popup__form-group"><input class="popup__form-input" type="password" placeholder="Повторите пароль" name="password2" data-js-action="input-pass"><svg class="icon-key popup__form-ico">
+                                    <use xlink:href="img/elements.svg#key"></use>
+                                </svg><button class="btn popup__form-input-btn" data-js-action="toggle-input-type" type="button"><svg class="icon-eye popup__form-ico popup__form-ico_show">
+                                        <use xlink:href="img/elements.svg#eye"></use>
+                                    </svg></button></div>
+                            <div class="popup__form-group popup__form-group_submit"><button class="btn btn_blue popup__form-btn" type="submit">Зарегистрироваться<svg class="icon-right-arrow btn__arrow">
+                                        <use xlink:href="img/elements.svg#right-arrow"></use>
+                                    </svg></button></div>
+                        </form>
+                        <div class="popup__footer"><a class="popup__link" href="#sign-in" data-modal="#sign-in">Уже зарегистрированы?</a><a class="popup__link" href="#recover" data-modal="#recover">Забыли пароль?</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="recover">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="popup">
+                        <div class="popup__header">
+                            <h3 class="popup__title title">Восстановление пароля</h3>
+                            <p class="popup__descr">Введите вашу почту и мы вышлем инструкцию по восстановления пароля</p>
+                        </div>
+                        <div class="popup__close" data-role="modal-close"><svg class="icon-cancel popup__close-ico">
+                                <use xlink:href="img/elements.svg#cancel"></use>
+                            </svg></div>
+                        <form class="popup__form">
+                            <div class="popup__form-group"><input class="popup__form-input" type="email" placeholder="user@mail.ru" name="email"><svg class="icon-user-login popup__form-ico">
+                                    <use xlink:href="img/elements.svg#user-login"></use>
+                                </svg></div>
+                            <div class="popup__form-group popup__form-group_submit"><button class="btn btn_blue popup__form-btn" type="submit">Восстановить пароль<svg class="icon-right-arrow btn__arrow">
+                                        <use xlink:href="img/elements.svg#right-arrow"></use>
+                                    </svg></button></div>
+                        </form>
+                        <div class="popup__footer"><a class="popup__link" href="#sign-in" data-modal="#sign-in">Авторизация</a><a class="popup__link" href="#sign-up" data-modal="#sign-up">Регистрация</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="legal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="popup">
+                        <div class="popup__header popup__header_legal">
+                            <h3 class="popup__title popup__title_legal title">Пользовательское Соглашение</h3>
+                        </div>
+                        <div class="popup__close" data-role="modal-close"><svg class="icon-cancel popup__close-ico">
+                                <use xlink:href="img/elements.svg#cancel"></use>
+                            </svg></div>
+                        <div class="popup__content">
+                            <p>Настоящее Пользовательское Соглашение (Далее Соглашение) регулирует отношения между ИП Горшков Роман Юрьевич (далее socpower.ru или Администрация) с одной стороны и пользователем сайта с другой. Используя сайт, Вы соглашаетесь с условиями данного соглашения. Если Вы не согласны с условиями данного соглашения, не используйте сайт socpower.ru!</p>
+                            <h2>Предмет соглашения</h2>
+                            <p>Администрация предоставляет пользователю право на использование функционала сервиса socpower.ru</p>
+                            <h2>Права и обязанности сторон</h2>
+                            <p> Пользователь имеет право: </p>
+                            <ul>
+                                <li>осуществлять поиск информации на сайте</li>
+                                <li>получать информацию на сайте</li>
+                                <li>создавать информацию для сайта</li>
+                                <li>распространять информацию на сайте</li>
+                                <li>копировать информацию на другие сайты с указанием источника</li>
+                                <li>требовать от администрации скрытия любой информации о пользователе</li>
+                                <li>требовать от администрации скрытия любой информации переданной пользователем сайту</li>
+                                <li>использовать информацию сайта в личных некоммерческих целях</li>
+                                <li>использовать информацию сайта в коммерческих целях без специального разрешения</li>
+                            </ul>
+                            <h3>Администрация имеет право:</h3>
+                            <ul>
+                                <li>по своему усмотрению и необходимости создавать, изменять, отменять правила</li>
+                                <li>ограничивать доступ к любой информации на сайте</li>
+                                <li>создавать, изменять, удалять информацию</li>
+                                <li>удалять учетные записи</li>
+                                <li>отказывать в регистрации без объяснения причин</li>
+                            </ul>
+                            <h3>Пользователь обязуется:</h3>
+                            <ul>
+                                <li>обеспечить достоверность предоставляемой информации</li>
+                                <li>обеспечивать сохранность личных данных от доступа третьих лиц</li>
+                                <li>обновлять Персональные данные, предоставленные при регистрации, в случае их изменения</li>
+                                <li>при копировании информации с других источников, включать в её состав информацию об авторе</li>
+                                <li>не распространять информацию, которая направлена на пропаганду войны, разжигание национальной, расовой или религиозной ненависти и вражды, а также иной информации, за распространение которой предусмотрена уголовная или административная ответственность</li>
+                                <li>не нарушать работоспособность сайта</li>
+                                <li>не создавать несколько учётных записей на Сайте, если фактически они принадлежат одному и тому же лицу</li>
+                                <li>не размещать материалы рекламного, эротического, порнографического или оскорбительного характера, а также иную информацию, размещение которой запрещено или противоречит нормам действующего законодательства РФ</li>
+                                <li>не использовать скрипты (программы) для автоматизированного сбора информации и/или взаимодействия с Сайтом и его Сервисами</li>
+                            </ul>
+                            <h3>Администрация обязуется:</h3>
+                            <ul>
+                                <li>поддерживать работоспособность сайта за исключением случаев, когда это невозможно по независящим от Администрации причинам</li>
+                                <li>осуществлять разностороннюю защиту учетной записи Пользователя</li>
+                                <li>защищать информацию, распространение которой ограничено или запрещено законами путем вынесения предупреждения либо удалением учетной записи пользователя, нарушившего правила</li>
+                            </ul>
+                            <h3>Ответственность сторон</h3>
+                            <ul>
+                                <li>пользователь лично несет полную ответственность за распространяемую им информацию</li>
+                                <li>администрация не несет никакой ответственности за достоверность информации, скопированной из других источников</li>
+                                <li>администрация не несёт ответственность за несовпадение ожидаемых Пользователем и реально полученных услуг</li>
+                                <li>администрация не несет никакой ответственности за услуги, предоставляемые третьими лицами</li>
+                                <li>в случае возникновения форс-мажорной ситуации (боевые действия, чрезвычайное положение, стихийное бедствие и т. д.) Администрация не гарантирует сохранность информации, размещённой Пользователем, а также бесперебойную работу информационного ресурса</li>
+                            </ul>
+                            <p></p>
+                            <h2>Осуществление оплаты</h2>
+                            <p> пользователь может совершать как разовую, так и регулярную оплату с привязкой своей банковской карты при разовой оплате сумма пополнения составляет от 10 рублей и выше при привязке банковской карты, сумма, списываемая сервисом, исчисляется исходя из настроек, которые были выставлены пользователем по формуле: списываемая сумма за сутки * 30 </p>
+                            <h2>Условия действия Соглашения</h2>
+                            <p>Данное Соглашение вступает в силу при любом использовании данного сайта. Соглашение перестает действовать при появлении его новой версии. Администрация оставляет за собой право в одностороннем порядке изменять данное соглашение по своему усмотрению. При изменении соглашения, в некоторых случаях, администрация может оповестить пользователей удобным для нее способом. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="partner">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="popup">
+                        <div class="popup__header popup__header_legal">
+                            <h3 class="popup__title popup__title_legal title">Партнёрское Соглашение</h3>
+                        </div>
+                        <div class="popup__close" data-role="modal-close"><svg class="icon-cancel popup__close-ico">
+                                <use xlink:href="img/elements.svg#cancel"></use>
+                            </svg></div>
+                        <div class="popup__content">
+                            <p>Став нашим Партнёром, Вы начинаете активно участвовать в развитии нашего общего с Вами бизнеса, и все старания будут вознаграждены. Вы не становитесь сотрудником компании. Вы являетесь независимым Агентом. В качестве независимого Агента, вы можете зарабатывать вместе с нашим сервисом так, как посчитаете нужным, в рамках Правил Компании socpower.ru. Ваше партнерское вознаграждение будет начисляться в соответствии с партнерскими процентами указанными в личном кабинете партнера. Размер партнерского вознаграждения будет зависеть от объёма и размера поступивших в компанию комиссионного вознаграждения от Вашей команды (комьюнити).</p>
+                            <p>Выплата партнерского вознаграждения осуществляется ежемесячно после 5 и 20-го числа текущего месяца. Партнерская комиссия – это получаемые партнером проценты с израсходованной суммы пользователем socpower.ru.</p>
+                            <h3>1.ПРИНЯТИЕ УСЛОВИЙ </h3>
+                            <p>1.1. Завершив регистрацию в личном кабинете в качестве Агента на сайте Компании,Вы принимаете условия настоящего Соглашения. Регистрация в качестве партнера на сайте socpower.ru свидетельствует о том, что Вы обязуетесь исполнять условия настоящего Соглашения, Правил компании, Политики конфиденциальности, Правил пользования и сотрудничества, а также о том, что информация, предоставленная Вами при регистрации, является полной, достоверной и точной.</p>
+                            <h3>2.ПАРТНЕРСКОЕ СОГЛАШЕНИЕ АГЕНТА</h3>
+                            <p>2.1. Этот документ является соглашением между Вами и Компанией socpower Компания вправе обрабатывать или принимать Ваши платежи, используя одно или несколько юридических лиц, перечисленных здесь: ИП Горшков Р.Ю.  независимо от того, как Ваш платеж будет обработан, Ваши юридические обязательства связаны с socpower.ru.</p>
+                            <p>2.2. Использующийся в тексте настоящего документа термин «Соглашение» означает настоящее «Партнерское Соглашение», а также следующие документы, которые являются неотъемлемой частью настоящего Соглашения. Заключая настоящее Соглашение, Вы подтверждаете, что прочитали, поняли и согласны со схемой начисления и выплат партнерского вознаграждения, изложенной в партнерском кабинете. Настоящее Соглашение охватывает важные вопросы, касающиеся Ваших деловых отношений с socpower.ru и любой другой компанией, уполномоченной socpower.ru.</p>
+                            <p>2.3.Вы соглашаетесь с тем, что socpower.ru имеет право по своему усмотрению вносить изменения как в настоящее Соглашение, так и в Партнерскую Программу, Вы соглашаетесь учитывать и соблюдать любое(-ые) такое(-ие) изменение(-я). Такие изменения вступают в силу через 30 дней после их публикации или получения Вами уведомления от socpower.ru о том, что в условия Соглашения были внесены изменения. Такие изменения не имеют обратной силы по отношению к действиям, имевшим место до вступления в силу таких изменений. socpower.ru направляет уведомление о внесении изменений одним или несколькими из следующих способов:</p>
+                            <p>
+                                а) путем размещения соответствующей информации на Платформе socpower.ru, <br>
+                                б) путем направления письма по электронной почте или <br>
+                                в) путем размещения соответствующей информации в Вашем личном кабинете. </p>
+                            <p>Продолжение ведения Вами бизнеса с socpower.ru получениелюбых выгод в соответствии с Соглашением или получение Вами вознаграждений после внесения очередных изменений означает Ваше согласие с этими изменениями.</p>
+                            <p>2.4. Пока настоящее Соглашение остается в силе, Вы можете использовать фирменные знаки (включая слоганы, логотипы, макеты или фирменные наименования), относящиеся к socpower.ru в рамках сотрудничества и для исполнения условий настоящего Соглашения и субагентского Договора. Вы обязуетесь использовать такие товарные знаки только в порядке, одобренном socpower.ru.</p>
+                            <p>2.5.Вы можете приглашать других лиц присоединиться к Вашей команде (комьюнити) в socpower.ru. Для того чтобы приглашенные Вами лицо считалось «Партнёром», такое лицо должно принять условия настоящего Соглашения и зарегистрироваться по вашей реферальной ссылке в личном кабинете socpower.ru. </p>
+                            <p>2.6. Ваше Комьюнити означает всех Партнёров, от объема оказанных услуг которых, зависит размер Вашего вознаграждения. В целях определения размера вознаграждения, а также порядка подчинённости, socpower.ru будет вести учёт привлеченных Вами Партнеров и комиссий, занесенных Вами и Вашим Комьюнити. Несмотря на то, что Партнёры и клиенты не имеют права перемещаться от одного Партнера к другому, socpower.ru вправе перемещать Партнёров и/или клиентов, но только по уважительной причине (например, в связи с несоблюдением их прямым Партнером наших Правил или в случае нарушения закона или нормативных правил).</p>
+                            <p>2.7. При условии, выполнении Правил компании socpower.ru, Вы будете получать вознаграждения в порядке, описанном в Книге Мотивации. Размер получаемых Вами ежемесячных вознаграждений зависит от объема оказываемых услуг клиентам socpower.ru. В случае, если средства были возвращены клиенту, а Вы при этом получили вознаграждение услуг, то указанные суммы будут вычитаться из Ваших последующих партнерских вознаграждений, до тех пор, пока они полностью не будут возмещены socpower.ru. Если Вы считаете, что имела место ошибка в связи с Вашей(-ими) партнерскими выплатами, Вы должны уведомить об этом socpower.ru в письменной форме втечение 30 дней с даты предполагаемой ошибки. </p>
+                            <p>2.8. Партнерские выплаты, которые Вы зарабатываете как независимый Агент, выплачиваются Вам по окончании каждого месяца путем зачисления на Ваш расчетный счет, предоставленный компании socpower.ru. Партнерские выплаты по настоящему Соглашению обрабатываются в течение 5 рабочих дней. Применяемые сборы банковской организации за перевод средств будут удерживаться из заработанных Вами вознаграждений в порядке, предусмотренном соглашением, условиями обслуживания и договоренностями, которые Вы заключаете с банком.</p>
+                            <p>2.9. Вы являетесь независимым Агентом, но не работником или сотрудником socpower.ru.  Это означает, что Вы свободны и независимы при определении порядка ведения своего бизнеса. Вы не можете, действуя от имени socpower.ru или любой из наших компаний, заключать какие-либо соглашения или договора аренды, принимать какую-либо ответственность или обязательства, оформлять какой-либо банковский счет или получать кредиты на имя socpower.ru. Вы не можете зачислять на свой счёт денежные переводы, которые подлежат уплате в пользу socpower.ru. Вы понимаете, что Вы не будете считаться работником socpower.ru, и Вы самостоятельно несёте ответственность за свои собственные расходы, включая уплату налогов и обязательных выплат индивидуального предпринимателя или налога на самозанятых.</p>
+                            <p>2.10. Вам необходимо соблюдать действующее законодательство, нормативные акты той страны, где ведете бизнес в socpower.ru   и Правила компании socpower.ru; соблюдать Ваши договоренности с Компанией socpower.ru; вести свой бизнес честно и этично; честно и добросовестно рассказывать про бизнес-возможности, услуги Компаний socpower.ru; действовать таким образом, чтобы обеспечить защиту и продвижение бренда компании и репутации Компании socpower.ru; </p>
+                            <p>2.11. Если Вы планируете продвигать бизнес-возможности, предоставляемые socpower.ru, а также возможности и услуги Платформы socpower.ru, то Вы обязуетесь использовать только официальные рекламные и промо материалы, предоставляемые Вам socpower.ru или рекламные и промо материалы согласованные с руководством socpower.ru. Использование любых других рекламных или промо материалов запрещено.</p>
+                            <p>2.12. Вы обязуетесь не рассылать спам по электронной почте или с помощью социальных сетей, с целью продвижения услуг socpower.ru или бизнес-возможностей, предоставляемых Партнёрам socpower.ru. Вы можете использовать инструменты email маркетинга, доступные в Вашем личном кабинете Агента, либо с помощью других инструментов, предоставляемых socpower.ru. Вы должны строго соблюдать правила с целью исключения отправки нежелательной коммерческой электронной почты (так называемый «спам»).</p>
+                            <p>2.13.Вы обязуетесь не регистрировать и не предпринимать попыток зарегистрировать наименование socpower или какой-либо из товарных знаков, фирменных наименований или названий услуг socpower.ru  или любые их производные для какого-либо доменного имени или адреса электронной почты, а также не включать любые такие названия/наименования или их производные в какое-либо доменное имя или адрес электронной почты.</p>
+                            <p>2.14. При презентации потенциальным Партнёрам бизнес-возможностей, предоставляемых Партнёрам socpower.ru, Вы обязуетесь:</p>
+                            <p>
+                                а) четко обозначать, что финансовый успех в качестве Партнера потребует усилий, упорства и навыков продаж в сфере недвижимости;<br>
+                                б) не давать потенциальным Партнёрам никаких заверений, в связи с которыми у них могут возникнуть разумные основания полагать, что их, как Партнеров, может ждать успех без приложения усилий и упорства и в отсутствие навыков продаж;
+                            </p>
+                            <p>2.15. Срок действия настоящего Соглашения составляет 1 год с даты его принятия socpower.ru, если только настоящее Соглашение не было расторгнуто до истечения указанного срока в порядке, предусмотренном в настоящем Соглашении. Ежегодно, в дату, в которую настоящее Соглашение было принято socpower.ru, срок действия настоящего Соглашения автоматически продлевается на один год, если ни одна из сторон не уведомит другую в письменной форме о том, что она не желает продлевать Соглашение, не менее, чем за 30 дней до любого такого ежегодного продления. 2.16. Вы вправе расторгнуть настоящее Соглашение в любое время без указания причин, направив письменное уведомление socpower.ru по электронному адрес info@socpower.ru </p>
+                            <p>2.17. socpower.ru вправе расторгнуть настоящее Соглашение только в следующих случаях: </p>
+                            <p>2.17.1. грубое и(или) неоднократное нарушение настоящего Соглашения или Привил socpower.ru</p>
+                            <p>2.17.2. занимаетесь какой-либо незаконной, мошеннической, вводящей в заблуждение Клиента или противоречащей этике socpower.ru деятельностью;</p>
+                            <p>2.17.3.смертью Агента;</p>
+                            <p>2.18. В случае, если Вы совершаете какое-либо действие или допускаете бездействие, которое наносит значительный ущерб репутации или бизнесу socpower.ru то подобные действия или бездействие могут привести, по усмотрению руководства socpower.ru, к применению одной или нескольких следующих мер:</p>
+                            <ul></ul>
+                                <li>вынесение письменного предупреждения в Ваш адрес;</li>
+                                <li>предъявление требования о незамедлительном принятии соответствующих мер;</li>
+                                <li>наложение штрафа, который может быть удержан из Ваших(-ей) комиссионных(-ой) выплат(-ы);</li>
+                                <li>утрата права на получение бонуса; </li>
+                                <li>приостановка действия настоящего Соглашения на 1 (один) комиссионный период;</li>
+                                <li>приостановка работы Вашего личного кабинета и доступа к нему;</li>
+                            
+                            <p>2.19. В случае, если Соглашение приостановлено в соответствии с вышеизложенными пунктами, Вы соглашаетесь с тем, что socpower.ru может приостановить выплату Вам комиссий на срок приостановления действия Соглашения. В случае расторжения Соглашения в соответствии с п. 2.17.1. и 2.17.2 после приостановления его действия, Вы согласны с тем, что Вы не будете иметь права на взыскание каких-либо комиссий, выплата которых была приостановлена на срок приостановки действия Соглашения. В случае, если данное Соглашение расторгнуто в соответствии с вышеизложенными пунктами, то партнерское вознаграждение будет утрачено.</p>
+                            <p>2.20. При расторжении настоящего Соглашения в связи со смертью Партнера, то всё партнерское вознаграждение, включая все комиссионные выплаты за месяц, в котором умер партнер, выплачиваются в полном объеме наследнику партнера в порядке, определяемом гражданским законодательством той страны, в которой умер или постоянно проживал партнер. </p>
+                            <p>2.21. В случае, если на момент расторжения Соглашения Вы считаетесь допустившим его нарушение или неисполнение обязательств по нему, Вы не вправе получать, подлежащие уплате партнерские комиссии, вне зависимости от того, были ли завершены продажи, с которыми связаны такие комиссии. Вы соглашаетесь с тем, что socpower.ru вправе вычесть, удержать или зачесть любые суммы, которые Вы должны уплатить socpower.ru</p>
+                            <p>2.23. У Вас, как у Партнера socpower.ru, есть возможность привлекать других Агентов в качестве Партнеров и зарабатывать комиссии на базе совершаемых ими услуг по покупке/продаже объектов недвижимости socpower.ru. Соответственно, Вы соглашаетесь, что Вы обязаны помогать таким Партнёрам и обучать их правильному ведению их независимого бизнеса в socpower.ru . Вы соглашаетесь с тем, что будете находиться на связи и общаться с этими привлеченными Партнерами и своевременно реагировать на их просьбы о поддержке и помощи. Кроме того, Вы соглашаетесь, что будете осуществлять контроль за их деятельностью, чтобы не допустить ситуаций, при которых они делали бы неправильные заявления относительно услуг socpower.ru, а также не допустить противозаконного или неподобающего поведения с их стороны.</p>
+                            <p>2.24. Если Вы предлагаете другому лицу воспользоваться бизнес-возможностями socpower.ru, Вы можете помочь ему в оформлении «Партнерского Соглашения» и регистрации личного кабинета (socpower.ru). Тем не менее, заявитель должен лично ознакомиться и согласиться с условиями «Партнерского Соглашения», «Правилами компании socpower.ru», «Правилами пользования и сотрудничества» и «Политикой конфиденциальности», «Субагентского договора».</p>
+                            <p>2.25. Настоящее Соглашение вступает для Вас в силу с момента Вашей регистрации в качестве независимого Партнера (Агента) в личном кабинете в socpower.ru.</p>
+                            <p>2.26. Настоящее Соглашение регулируется законодательными актами Российской Федерации, для партнеров, находящихся на территории другого государства будет дополнительно прописан порядок регулирования взаимоотношений с Партнерами другого государства.</p>
+                            <p>Дата принятия настоящего соглашения: 02.05.2022</p>
+
+                            <h3>КНИГА МОТИВАЦИИ</h3> 
+
+                            <p>Данный раздел определяет партнерские выплаты при привлечении клиентов в сервис socpower.ru</p>
+
+                            <p>1. Как происходит начисление.</p>
+
+                            <p>1.1. Средства начисляются на ваш партнерский счет внутри кабинета socpower и отображены в разделе "Партнерская программа"</p>
+
+                            <p>1.2. Средства начисляются только после того, как ваш реферал потратил их на пользование сервисом socpower</p>
+
+                            <p>2. Варианты взаимодействия.</p>
+
+                            <p>2.1. Стандартная партнерская программа подразумевает под собой 3-х уровневую реферальную систему:</p>
+                            <ul>
+                                <li>10% от потраченных средств вы получаете от партнеров первого уровня;</li>
+                                <li>3% от потраченных средств вы получаете от партнеров второго уровня;</li>
+                                <li>2 % от потраченных средств вы получаете от партнеров третьего уровня;</li>
+                            </ul>
+
+                            <p>2.2. В socpower предусмотрена расширенная партнерская программа. Стать участником расширенной программы можно пригласив в сервис от 50 активных пользователей первого уровня. В этом случае ваше партнерское вознаграждение будет составлять:</p>
+                            <ul>
+                                <li>20% от потраченных средств вы получаете от партнеров первого уровня;</li>
+                                <li>3% от потраченных средств вы получаете от партнеров второго уровня;</li>
+                                <li>2 % от потраченных средств вы получаете от партнеров</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(64829911, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+        });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/64829911" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <script src="js/libs.min_v%3D1.js"></script>
+        <script src="js/custom_v%3D1.js"></script>
+    
+</body></html>
