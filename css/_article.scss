@@ -171,87 +171,46 @@
         }
     }
 
-    &__subtitle {
-        color: #0f1323;
-        font-size: 40px;
-        font-weight: 500;
-        font-style: normal;
-        letter-spacing: normal;
-
-        @include media(1199) {
-            font-size: 30px;
-        }
-
-        @include media(991) {
-            font-size: 25px;
-        }
-    }
-
     &__title {
-        color: #0f1323;
-        font-size: 40px;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: normal;
         margin-top: 30px;
+        padding-bottom: 74px !important;
 
         @include media(1199) {
-            font-size: 30px;
             margin-top: 10px;
         }
 
-        @include media(991) {
-            font-size: 25px;
+        @include media(768) {
+            text-align: left;
+
+            span {
+                display: block;
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            margin: 37px 0;
+
+            @include media(767) {
+                left: 0;
+            }
         }
     }
 
     &__sec_title {
-        color: #0f1323;
-        font-size: 40px;
-        font-weight: 500;
-        font-style: normal;
-        letter-spacing: normal;
         margin-bottom: 30px !important;
+        text-align: left;
 
         @include media(1199) {
-            font-size: 30px;
             margin-top: 10px;
-        }
-
-        @include media(991) {
-            font-size: 25px;
-        }
-    }
-
-    &__line {
-        height: 4px;
-        width: 360px;
-        background: #558dfe;
-        display: block;
-        margin: 37px 0;
-
-        @include media(768) {
-            height: 3px;
-            width: 200px;
-        }
-
-        @include media(475) {
-            width: 130px;
         }
     }
 
     &__description {
-        color: #0f1323;
-        font-size: 22px;
-        line-height: 1.3;
-
-        @include media(1199) {
-            font-size: 20px;
-        }
-
-        @include media(991) {
-            font-size: 17px;
-        }
+        max-width: 100%;
 
         &_wrap {
             display: flex;
@@ -263,9 +222,6 @@
 
     &__alert {
         border-left: 4px solid #558dfe;
-        font-size: 22px;
-        line-height: 1.3;
-        color: rgb(0, 0, 0);
         font-style: italic;
         font-weight: bold;
         padding-left: 20px !important;
@@ -273,11 +229,6 @@
         @include media(1199) {
             padding-left: 15px !important;
             border-left: 3px solid #558dfe;
-            font-size: 20px;
-        }
-
-        @include media(991) {
-            font-size: 17px;
         }
     }
 
@@ -326,7 +277,7 @@
             width: auto;
 
             &:nth-child(2) {
-                width: 380px;
+                width: 360px;
 
                 @include media(1199) {
                     width: 350px;
@@ -338,7 +289,7 @@
             }
             
             &:nth-child(1) {
-                width: 780px;
+                width: 760px;
                 
                 @include media(1199) {
                     width: 750px;
@@ -495,7 +446,7 @@
             }
 
             &:nth-child(1) {
-                width: 640px;
+                width: 630px;
 
                 @include media(1199) {
                     width: 600px;
@@ -507,7 +458,7 @@
             }
 
             &:nth-child(2) {
-                width: 530px;
+                width: 520px;
 
                 @include media(1199) {
                     width: 470px;
@@ -708,68 +659,33 @@
                     padding: 0;
                 }
 
-                h3 {
-                    color: #0f1323;
-                    font-size: 30px;
-                    font-weight: 500;
+                &_title {
+                    margin-bottom: 70px !important;
 
-                    @include media(1199) {
-                        font-size: 25px;
-                        margin-top: 10px;
+                    @include media(768) {
+                        text-align: left;
                     }
-            
-                    @include media(991) {
-                        font-size: 25px;
-                    }
-                }
 
-                h2 {
-                    color: #0f1323;
-                    font-size: 40px;
-                    font-weight: 700;
-                    font-style: normal;
-                    letter-spacing: normal;
-                    max-width: 560px;
-                    margin: 25px 0;
-
-                    @include media(1199) {
-                        font-size: 30px;
-                        margin-top: 10px;
+                    span {
+                        display: block;
+                        margin-top: 25px;
                     }
-            
-                    @include media(991) {
-                        max-width: 100%;
-                        margin-bottom: 15px;
-                        font-size: 25px;
-                    }
-                }
 
-                &_line {
-                    height: 4px;
-                    width: 280px;
-                    background: #558dfe;
-                    display: block;
-                    margin-bottom: 50px;
-                    
-                    @include media(650) {
-                        width: 130px;
-                        margin-bottom: 30px;
-                        height: 3px;
+                    &::before {
+                        display: none;
+                    }
+
+                    &::after {
+                        margin-bottom: -25px;
+
+                        @include media(768) {
+                            left: 0;
+                        }
                     }
                 }
 
                 p {
-                    color: #0f1323;
-                    font-size: 22px;
-                    line-height: 1.3;
-
-                    @include media(1199) {
-                        font-size: 20px;
-                    }
-
-                    @include media(991) {
-                        font-size: 17px;
-                    }
+                    max-width: 100%;
                 }
 
                 a {
@@ -780,12 +696,6 @@
                     gap: 30px;
                     margin-top: 30px;
                     text-decoration: none;
-
-                    &:hover, &:focus, &:visited, &:active {
-                        background-image: linear-gradient(to right, #0f50d4 0%, #3f7ce4 100%);
-                        color:#eff0f4;
-                        box-shadow: 0 5px 30px -5px rgba(15, 80, 212, 1);
-                    }
 
                     @include media(992) {
                         margin-bottom: 0;
