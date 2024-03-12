@@ -653,6 +653,7 @@ button {
         &-text {
             color: $color_5;
             font-size: 13px;
+            white-space: nowrap;
         }
         
         &-count {
@@ -754,6 +755,7 @@ button {
             justify-content: center;
             display: none;
             margin-left: 30px;
+            flex-shrink: 0;
 
             @include media(410) {
                 width: 35px;
@@ -2840,8 +2842,19 @@ button {
         padding-top: 40px;
     }
 
+    &.articles_page {
+        @include media(830) {
+            padding-top: 100px;
+        }
+    }
+
     ul, ol, dl {
         list-style-type: none;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        margin: 0;
+        padding: 0;
     }
 
     .container {
@@ -2849,11 +2862,11 @@ button {
         overflow: visible;
         padding-top: 95px;
 
-        @include media(992) {
+        @include media(1199) {
             padding-top: 70px;
         }
 
-        @include media(450) {
+        @include media(830) {
             padding-top: 60px;
         }
 
@@ -2863,19 +2876,11 @@ button {
 
         &.article__container {
             @include media (830) {
-                padding-top: 160px;
+                padding-top: 180px;
             }
 
-            @include media(630) {
-                padding-top: 130px;
-            }
-
-            @include media(500) {
-                padding-top: 100px;
-            }
-
-            @include media(400) {
-                padding-top: 80px;
+            @include media(768) {
+                padding-top: 190px;
             }
         }
     }
@@ -2914,18 +2919,11 @@ button {
 
         &.article_page__title {
             @include media(830) {
-                font-size: 150px;
-            }
-
-            @include media(630) {
                 font-size: 120px;
+                padding-top: 100px;
             }
 
-            @include media(500) {
-                font-size: 100px;
-            }
-
-            @include media(410) {
+            @include media(768) {
                 font-size: 80px;
             }
 
@@ -2938,25 +2936,14 @@ button {
             img {
                 @include media(830) {
                     position: absolute;
-                    top: 0;
-                    left: 350px;
+                    top: 100px;
+                    left: 250px;
                 }
 
-                @include media(630) {
-                    left: 260px;
-                    top: -20px;
-                    height: 130px;
-                }
-
-                @include media(500) {
-                    left: 180px;
-                    top: -50px;
-                }
-
-                @include media(400) {
-                    left: 140px;
+                @include media(768) {
+                    top: 70px;
+                    left: 150px;
                     height: 100px;
-                    top: -30px;
                 }
             }
         }
@@ -3571,8 +3558,20 @@ button {
                     align-items: center;
                     justify-content: center;
                     gap: 30px;
+                    padding: 30px 70px;
                     border-radius: 100px;
                     margin-top: 30px;
+                    border-radius: 45px;
+                    background-color: #508dff;
+                    background-image: linear-gradient(to right, #2f73ff 0%, #68a0fe 100%);
+                    box-shadow: 0 5px 30px -5px rgba(47, 115, 255, 1);
+                    text-decoration: none;
+
+                    &:hover, &:focus, &:visited, &:active {
+                        background-image: linear-gradient(to right, #0f50d4 0%, #3f7ce4 100%);
+                        color:#eff0f4;
+                        box-shadow: 0 5px 30px -5px rgba(15, 80, 212, 1);
+                    }
 
                     @include media(992) {
                         margin-bottom: 0;
