@@ -2301,13 +2301,13 @@ button:hover {
   color: rgb(0, 0, 0);
   font-style: italic;
   font-weight: bold;
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 @media screen and (max-width: 768px) {
   .article__alert {
     font-size: 17px;
     line-height: 25px;
-    padding-left: 15px;
+    padding-left: 15px !important;
     border-left: 3px solid #558dfe;
   }
 }
@@ -2960,6 +2960,7 @@ button:hover {
     max-width: 443px;
     width: 100%;
     z-index: 0;
+    margin-left: -160px;
   }
   .hero__parallax-layer_phone {
     max-width: 100%;

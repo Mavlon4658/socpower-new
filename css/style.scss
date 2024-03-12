@@ -3042,12 +3042,12 @@ button {
         color: rgb(0, 0, 0);
         font-style: italic;
         font-weight: bold;
-        padding-left: 20px;
+        padding-left: 20px !important;
 
         @include media(768) {
             font-size: 17px;
             line-height: 25px;
-            padding-left: 15px;
+            padding-left: 15px !important;
             border-left: 3px solid #558dfe;
         }
     }
@@ -3748,6 +3748,7 @@ button {
         max-width: 443px;
         width: 100%;
         z-index: 0;
+        margin-left: -160px;
     }
 
     .hero__parallax-layer_phone {
