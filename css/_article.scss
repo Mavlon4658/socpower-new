@@ -689,11 +689,6 @@
                 }
 
                 a {
-                    min-height: auto;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 30px;
                     margin-top: 30px;
                     text-decoration: none;
 
@@ -703,14 +698,6 @@
 
                     @include media(650) {
                         margin-top: 20px;
-                    }
-
-                    img {
-                        height: 25px;
-
-                        @include media(650) {
-                            height: 22px;
-                        }
                     }
                 }
             }
